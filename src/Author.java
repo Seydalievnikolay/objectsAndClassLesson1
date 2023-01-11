@@ -2,7 +2,7 @@ public class Author {
     public String nameAuthor;
     public String surName;
 
-    public Author(String nameAuthor, String surName) {
+    public Author (String nameAuthor, String surName) {
         this.nameAuthor = nameAuthor;
         this.surName = surName;
     }

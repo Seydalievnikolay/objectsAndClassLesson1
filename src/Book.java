@@ -1,20 +1,22 @@
 public class Book {
     public String name;
-    public String author;
+    public Author author;
     public int publishingYear;
 
 
-    public Book(String name, String author, int publishingYear) {
+
+    public Book(String name, Author author, int publishingYear) {
         this.name = name;
-        this.publishingYear = publishingYear;
         this.author = author;
+        this.publishingYear = publishingYear;
     }
+
 
     public String getName() {
         return this.name;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return this.author;
     }
 
