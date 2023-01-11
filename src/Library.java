@@ -1,7 +1,7 @@
 public class Library {
 
     public static void main (String[] args){
-
+        Author author = new Author("Isaac", "Asimov");
         Author IsaacAsimov = new Author("Isaac", "Asimov");
         System.out.println(IsaacAsimov.getNameAuthor() + " " + IsaacAsimov.getSurName());
         Author TeodorDreiser = new Author("Teodor", "Dreiser");
