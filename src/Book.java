@@ -34,16 +34,20 @@ public class Book {
 
     @Override
     public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
+        if(this == other) {return  true;}
+        if (other == null || this.getClass() != other.getClass()) {
             return false;
         }
         Book two = (Book) other;
-        return name.equals(two.name);
+        return two.name == this.name &&
+                two.author == this.author &&
+                 two.publishingYear == this.publishingYear;
+
     }
 
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(name);
+        return java.util.Objects.hash(name, author, publishingYear);
     }
 }
 
