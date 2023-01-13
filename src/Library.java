@@ -13,5 +13,7 @@ public class Library {
         System.out.println("Вторая книга = " + two.getName() + " " + secondAuthor.getNameAuthor() + " " + secondAuthor.getSurName() + " " + two.getPublishingYear());
         two.setPublishingYear(1867);
         System.out.println("Вторая книга = " + two.getName() + " " + secondAuthor.getNameAuthor() + " " + secondAuthor.getSurName() + " " + two.getPublishingYear());
+        Book three = new Book("Idiot", secondAuthor, 1866);
+        System.out.println("Вторая книга = " + three.getName() + " " + secondAuthor.getNameAuthor() + " " + secondAuthor.getSurName() + " " + three.getPublishingYear());
     }
 }
